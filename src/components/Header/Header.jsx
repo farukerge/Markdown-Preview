@@ -14,14 +14,14 @@ const Header = () => {
     console.log(isShowingHelp)
   }
   return (
-    <div className='flex flex-col '>
+    <div className=''>
       <div
-        className=' justify-end flex'
+        className=' justify-end flex p-3 '
         onClick={showHelp}>
-          <BsQuestionSquare />
+          <BsQuestionSquare className=' text-5xl bg-secondary cursor-pointer' />
       </div>
       <div className=' justify-center items-center flex'>
-        <h1>Markdown Previewer</h1>
+        <h1 className=' text-headline text-3xl font-bold mb-10'>Markdown Previewer</h1>
       </div>
     </div>
   )

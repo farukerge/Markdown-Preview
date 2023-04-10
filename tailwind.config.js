@@ -9,9 +9,13 @@ export default {
       colors: {
         'primary': '#ffcd38',
         'secondary': '#ffdd67',
+        'headline': '#4a4a4a',
+        'paragraph': '#7a7152'
       }
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar')
+  ],
 }
 
