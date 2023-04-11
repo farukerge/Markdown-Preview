@@ -15,12 +15,12 @@ const Content = () => {
   return (
     <div className=' flex  w-2/4 mx-auto items-center  justify-center  gap-10 '>
       <textarea
-        className=' w-2/4  h-[40rem] p-5 rounded-lg bg-secondary  text-paragraph scrollbar scrollbar-thin scrollbar-thumb-yellow-500 scrollbar-track-yellow-700 '
+        className=' w-2/4  h-[40rem] p-5 rounded-lg bg-secondary  text-paragraph scrollbar-thin scrollbar-thumb-yellow-500 scrollbar-track-yellow-700 resize-none  shadow-2xl '
         value={isShowingHelp ? textHelp : textUser}
         onChange={(e) => dispatch(changeText(e.target.value))}
       />
               
-        <div className=' overflow-y-auto h-[40rem] w-2/4 p-5 bg-secondary rounded-lg text-paragraph '>
+        <div className=' overflow-y-auto h-[40rem] w-2/4 p-5 bg-secondary rounded-lg text-paragraph shadow-2xl '>
             <ReactMarkdown
               children={isShowingHelp ? textHelp : textUser}
               remarkPlugins={[remarkGfm]}
